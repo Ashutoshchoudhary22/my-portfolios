@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My PersonaL Postfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a8f69b6579.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/a" alt="">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi,I'm <span>Ashutosh Choudhary </span> <br> from India</h1>
+            </div>
+        </div>
+    </div>
+    <!---------- about| -------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/my.pmg.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Highly motivated and dedicated Computer Science Engineering student with a strong Academic
+                        Background. Proficient in programming languages such as HTML, CSS and JavaScript. Skilled in
+                        problem-solving and analytical thinking, with a keen interest in Software Development and Web
+                        Technologies. Seeking to apply my skills and knowledge in a challenging and dynamic environment.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML <i class="fa-brands fa-html5"></i></span><br>Making the structure and content
+                                of web pages.</li>
+                            <li><span>CSS <i class="fa-brands fa-css3-alt"></i></span><br>Controls the presentation and
+                                layout of Web Pages. </li>
+                            <li><span>JAVASCRIPT <i class="fa-brands fa-js"></i></span><br>A Scripting language that
+                                enables you to create content,<br>
+                                Control Multimedia, Animate images etc.</li>
+                            <li><span>React.JS <i class="fa-brands fa-react"></i></span><br>React is a framework that
+                                employs Webpack to automatically compile React, JSX, and ES6 code while handling CSS
+                                file prefixes. </li>
+                                <li><span>Node.Js <i class="fa-brands fa-react"></i></span><br>Node is a framework that
+                                    employs Webpack to automatically compile React, JSX, and ES6 code while handling CSS
+                                    file prefixes. </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 - Current</span><br> UI/UX Design Training at SmartBrains Software
+                                technologies</li>
+                            <li><span>2023</span><br>Complete the Certification of AWS ClouD</li>
+                            <li><span>2023</span><br>Complete the Certification of Interview Skills</li>
+                            <li><span>2023</span>Complete the Certification of Atiquette Skills</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-24</span><br>Complete the Bachelor Degree B.tech In Computer Science
+                                Engineering.(6.34Cgpa)</li>
+                            <li><span>2020</span><br>Complete Board of Higher Education</li>
+                            <li><span>2018</span><br>Complete the Board of Intermediate Education</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------services------ -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title"> My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web designing is the process of planning, conceptualizing, and implementing the plan for
+                        designing a website in a way that is functional and offers a good user experience.</p>
+                    <a href="https://en.wikipedia.org/wiki/Web_design">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>UI/UX design is the process of creating the look and feel of a product or service, with the goal
+                        of providing a meaningful user experience:</p>
+                    <a href="https://en.wikipedia.org/wiki/User_experience_design">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>The process of creating the look and feel of an Application, including its Layout, Visual
+                        elements, and interactive features.</p>
+                    <a href="https://en.wikipedia.org/wiki/Application_development">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ----------Portfolio--------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"> My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Image Gallery</h3>
+                        <p>The app connects you to the talented peoiple around the world.Download it from my store.</p>
+                        <a href="https://ashutoshchoudhary22.github.io/image-gallery/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Image Slider</h3>
+                        <p>The app connects you to the talented people around the world.Download it from my store</p>
+                        <a href="https://ashutoshchoudhary22.github.io/image-slide/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3> Online shoping app</h3>
+                        <p>The app connects you to the talented peoiple around the world.Download it from my store</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- -----------contact--------- -->
+    <div id="Contact">
+        <div class="conatiner">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>akkychoudhary5468@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i>9870605594</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/akky.choudhary.1023?mibextid=ZbWKwL"><i
+                                class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://x.com/AkkYcHouDH14247?t=em5VxG8JAhqCKLQjUw1Jfw&s=08"><i
+                                class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/akky_jaat_22/profilecard/?igsh=eWoyZDBoenluaGtm"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a
+                            href="https://www.linkedin.com/in/ashutosh-choudhary-693b1a264?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/ASHUTOSH UP RESUM....pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Mail" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Developer Made <i class="fa-solid fa-heart"></i> by Ashutosh Choudhary</p>
+        </div>
+    </div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyk7P3z3-_YC5Ub1GHcl-QoJ8qUXEXMcCqxR6X2SiGGNH2wDg-65fzBiRSVXJ4tfYT-/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent succcesfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
